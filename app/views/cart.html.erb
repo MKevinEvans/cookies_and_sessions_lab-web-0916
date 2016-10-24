@@ -1,0 +1,7 @@
+Add something to your cart
+<%= form_tag("/products/add", method: "post") do %>
+  <%= label_tag(:product, "add to cart") %>
+  <%= text_field_tag(:product) %>
+  <%= submit_tag("add to cart") %>
+<% end %>
+
